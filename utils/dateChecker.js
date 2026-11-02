@@ -8,7 +8,7 @@ const { parse, isBefore, startOfDay } = require("date-fns");
 function isDeadlineExpired(text) {
   if (!text) return false;
 
-  const deadlineRegex = /(?:deadline|ማመልከቻ ቀን|የመጨረሻ ቀን|በቅድሚያ|until|before)\s*[:፦]?\s*([a-zA-a-z0-9,\s/-]+)/i;
+  const deadlineRegex = /(?:deadline|deadline date|ማመልከቻ ቀን|የመጨረሻ ቀን|በቅድሚያ|until|before)\s*[:፦]?\s*([a-zA-a-z0-9,\s/-]+)/i;
   const match = text.match(deadlineRegex);
 
   if (!match || !match[1]) {

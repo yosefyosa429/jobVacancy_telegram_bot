@@ -21,6 +21,7 @@ module.exports = {
     "melat_nigussie_16",
     "jobs_in_ethio",
     "ethio_job_vacancy1",
+    
   ],
 
   TARGET_CHANNEL: -1004374829615,
